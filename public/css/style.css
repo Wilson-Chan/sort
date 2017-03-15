@@ -2373,6 +2373,14 @@ section#user {
     background: #ed1a3b;
 }
 
+#user-dash #new .col-md-12 .col-xs-6.col-sm-4 {
+    padding: 0 !important;
+}
+
+#user-dash #new .col-md-12 img {
+    width: 100%;
+}
+
 .upload-img {
     margin: 30px 0;
 }
@@ -2463,6 +2471,8 @@ input#area-code {
     background: #ed1a3b;
     color: white;
     margin-top: 10px;
+	width: 100%;
+	float: left;
 }
 
 .closebtn {
@@ -3023,6 +3033,10 @@ button.red-btn:hover {
 a.comp-web {
     color: #ed1a3b;
     text-decoration: none;
+}
+
+a.comp-web:hover {
+    color: #000;
 }
 
 .single-comp-price {
