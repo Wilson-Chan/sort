@@ -1980,6 +1980,10 @@ a.reset-button:hover {
 	width: 50%;
 }
 
+.bootstrap-datetimepicker-widget {
+    bottom: auto !important;
+}
+
 #request .date input {
     width: 110px;
     float: left;
