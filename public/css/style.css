@@ -2007,6 +2007,10 @@ a.reset-button:hover {
 	width: 50%;
 }
 
+#request .date-left .form-control, #request .date-right .form-control {
+	height: 30px
+}
+
 textarea {
     resize: vertical;
 }
@@ -3166,6 +3170,12 @@ img.avt.left {
     font-size: 15px;
 }
 
+.go-back.other {
+    margin-top: 0;
+    width: 50%;
+    float: right;
+}
+
 .go-back {
     text-align: right;
     margin-right: 20px;
@@ -3280,6 +3290,14 @@ li.code {
 .entertainer-fb a {
     color: #ed1a3b;
     text-decoration: none;
+}
+
+.entertainer-web a:hover {
+    color: #333;
+}
+
+.entertainer-fb a:hover {
+    color: #333;
 }
 
 .photos img.img-fluid {
