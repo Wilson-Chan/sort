@@ -2408,7 +2408,7 @@ section#user {
 
 .dashboard label {
     font-weight: 100;
-	color: #000;
+	color: #000 !important;
 }
 
 .dashboard input {
@@ -3348,7 +3348,7 @@ a.view-profile:hover {
 }
 
 #entertainer p.small {
-    color: #1c1c1c;
+    color: #1c1c1c !important;
 }
 
 .gallery-title {
@@ -3357,7 +3357,7 @@ a.view-profile:hover {
 
 p.t-small {
     font-size: 13px;
-    color: #1c1c1c;
+    color: #1c1c1c !important;
 }
 
 .drop-box {
