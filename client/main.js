@@ -11,7 +11,7 @@ Template.request.onRendered(function() {
 	});
 	
 	$(document).ready(function(){
-    $('[id^=phone').keypress(validateNumber);
+    $('[id^=phone').keypress(validateNumber2);
 	});
 
 	function validateNumber(event) {
@@ -23,7 +23,18 @@ Template.request.onRendered(function() {
 		} else {
 			return true;
 		}
-	};    
+	};  
+
+	function validateNumber2(event) {
+		var key = window.event ? event.keyCode : event.which;
+		if (event.keyCode === 8 || event.keyCode === 46) {
+			return true;
+		} else if ( key < 48 || key > 57 ) {
+			return false;
+		} else {
+			return true;
+		}
+	};   
 });
 
 	
@@ -67,10 +78,10 @@ Template.profile.onRendered(function () {
 
 Template.uinfo.onRendered(function() {	
 	$(document).ready(function(){
-    $('[id^=phone').keypress(validateNumber);
+    $('[id^=phone').keypress(validateNumber3);
 	});
 
-	function validateNumber(event) {
+	function validateNumber3(event) {
 		var key = window.event ? event.keyCode : event.which;
 		if (event.keyCode === 8 || event.keyCode === 46) {
 			return true;
@@ -84,10 +95,10 @@ Template.uinfo.onRendered(function() {
 
 Template.dashboard2.onRendered(function() {	
 	$(document).ready(function(){
-    $('[id^=price').keypress(validateNumber);
+    $('[id^=price').keypress(validateNumber4);
 	});
 
-	function validateNumber(event) {
+	function validateNumber4(event) {
 		var key = window.event ? event.keyCode : event.which;
 		if (event.keyCode === 8 || event.keyCode === 46) {
 			return true;
@@ -101,18 +112,18 @@ Template.dashboard2.onRendered(function() {
 
 Template.info.onRendered(function() {	
 	$(document).ready(function(){
-    $('[id^=postcode').keypress(validateNumber);
+    $('[id^=postcode').keypress(validateNumber5);
 	});
 	
 	$(document).ready(function(){
-    $('[id^=phone').keypress(validateNumber);
+    $('[id^=phone').keypress(validateNumber6);
 	});
 	
 	$(document).ready(function(){
-    $('[id^=phone2').keypress(validateNumber);
+    $('[id^=phone2').keypress(validateNumber7);
 	});
 
-	function validateNumber(event) {
+	function validateNumber5(event) {
 		var key = window.event ? event.keyCode : event.which;
 		if (event.keyCode === 8 || event.keyCode === 46) {
 			return true;
@@ -121,5 +132,27 @@ Template.info.onRendered(function() {
 		} else {
 			return true;
 		}
-	};    
+	};
+
+	function validateNumber6(event) {
+		var key = window.event ? event.keyCode : event.which;
+		if (event.keyCode === 8 || event.keyCode === 46) {
+			return true;
+		} else if ( key < 48 || key > 57 ) {
+			return false;
+		} else {
+			return true;
+		}
+	}; 
+
+	function validateNumber7(event) {
+		var key = window.event ? event.keyCode : event.which;
+		if (event.keyCode === 8 || event.keyCode === 46) {
+			return true;
+		} else if ( key < 48 || key > 57 ) {
+			return false;
+		} else {
+			return true;
+		}
+	};     
 });
