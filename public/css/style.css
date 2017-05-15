@@ -2670,6 +2670,10 @@ section#user-request {
     font-weight: bold;
 }
 
+.rg {
+    word-wrap: break-word;
+}
+
 .b-info {
     text-align: center;
     border-bottom: 1px solid #000;
@@ -4243,7 +4247,7 @@ footer li {
 }
 
 .cg, .wt {
-    width: 50%;
+    width: 100%;
     float: left;
     text-align: left;
     padding: 5px 10px;
@@ -4254,7 +4258,7 @@ footer li {
 }
 
 .rg {
-	text-align: right;
+	text-align: left;
 }
 
 .rg br {
