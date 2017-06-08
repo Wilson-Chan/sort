@@ -3619,6 +3619,11 @@ button.user-template.red:hover {
 	cursor: pointer;
 }
 
+#chat-box .modal-dialog {
+    width: 100%;
+    float: left;
+}
+
 #chatbox {
     width: 320px;
     background: #e9eef4;
@@ -3628,7 +3633,11 @@ button.user-template.red:hover {
 
 #chatbox .content {
     background: #e9eef4;
-    margin-top: 70px;
+    padding-top: 70px;
+    width: 100%;
+    float: left;
+    height: 85vh;
+    overflow: auto;
 }
 
 #chatbox .hdr-title {
@@ -3713,12 +3722,12 @@ button.user-template.red:hover {
 }
 
 #chatbox .input-chat {
-    width: 100%;
-    float: left;
-    margin-top: 10px;
+    margin-left: 10px;
     background: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
+    position: fixed;
+    bottom: 5px;
 }
 
 #chatbox input.form-control {
